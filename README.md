@@ -4,7 +4,7 @@ This is a simple React project that allows you to create a slider of people's in
 
 **Project Link:**
 
-[Slider React Project](https://your-project-url-here.com)
+[Slider React Project](https://slider-react-ti5l.onrender.com)
 
 **Description:**
 
