@@ -349,13 +349,18 @@ ul {
 
 .slick-container {
     margin: 0 auto;
-    margin-top: 10rem;
+    margin-top: 5rem;
     width: 80vw;
     max-width: 800px;
     text-align: center;
 }
 .slick-slide img {
-    display: inline-block;
+    /* display: inline-block; */
+    margin: 20px auto;
+}
+
+.slick-slide {
+    padding: 20px;
 }
 
 .slick-prev::before {

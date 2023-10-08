@@ -1,17 +1,38 @@
-import { list, longList, shortList } from './data';
-import { FaQuoteRight } from 'react-icons/fa';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { list, longList, shortList } from './data';
+
+import { FaQuoteRight } from 'react-icons/fa';
 import { useState } from 'react';
 
 const Carousel = () => {
-    const [people, setPeople] = useState(shortList);
-    const prevSlide = () => {};
-    const nextSlide = () => {};
+    const [people, setPeople] = useState(list);
+    const [currentPerson, setCurrentPerson] = useState(0);
+
+    const prevSlide = () => {
+        if (currentPerson === 0) {
+            setCurrentPerson(people.length - 1);
+        } else {
+            setCurrentPerson((currentPerson) => currentPerson - 1);
+        }
+    }
+
+    const nextSlide = () => {
+        if (currentPerson === people.length - 1) {
+            setCurrentPerson(0);
+        } else {
+            setCurrentPerson((currentPerson) => currentPerson + 1);
+        }
+    };
 
     return (
         <section className='slider-container'>
-            {people.map((person) => (
-                <article key={person.id} className='slide'>
+            {people.map((person, personIndex) => (
+                <article
+                    key={person.id}
+                    className='slide'
+                    style={{
+                        transform: `translateX(${100*(personIndex - currentPerson)}%)`,
+                    }}>
                     <img
                         src={person.image}
                         alt={person.name}
@@ -31,6 +52,6 @@ const Carousel = () => {
             ))}
         </section>
     );
-};
-
+}
+                
 export default Carousel;

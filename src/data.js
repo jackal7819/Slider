@@ -21,7 +21,7 @@ export const list = [
         image: 'https://www.course-api.com/images/people/person-4.jpeg',
         name: 'John Doe',
         title: 'Regular Guy',
-        quote: "Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do.",
+        quote: 'Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do.',
     },
     {
         id: 3,
@@ -71,7 +71,7 @@ export const longList = [
     {
         id: 5,
         image: 'https://www.course-api.com/images/people/person-5.jpeg',
-        name: 'Michael Johnson',
+        name: 'Olivia Adams',
         title: 'Marketing Director',
         quote: "The harder you work for something, the greater you'll feel when you achieve it.",
     },
@@ -92,7 +92,7 @@ export const longList = [
     {
         id: 8,
         image: 'https://www.course-api.com/images/people/person-8.jpeg',
-        name: 'Olivia Adams',
+        name: 'Michael Johnson',
         title: 'Entrepreneur',
         quote: "Don't watch the clock; do what it does. Keep going.",
     },
